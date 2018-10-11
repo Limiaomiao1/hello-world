@@ -1,0 +1,41 @@
+//
+//  PrefixHeader.pch
+//  Shangdai
+//
+//  Created by tuanshang on 17/2/10.
+//  Copyright © 2017年 tuanshang. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+/** 日志输出 */
+#ifdef DEBUG // 开发
+#define TSLog(...) NSLog(__VA_ARGS__)
+#else // 发布
+#define TSLog(...)
+#endif
+
+/** self的弱引用 **/
+#define TSWeakSelf __weak typeof(self) weakSelf = self;
+
+/**用户的udid*/
+#define uuid [[[UIDevice currentDevice] identifierForVendor] UUIDString]
+
+/** 类引用 */
+#import "TSConstant.h"
+#import "HeadMethod.h"
+#import "UIView+Extension.h"
+#import "TSAPI.h"
+#import "PureLayout.h"
+#import "DZStatusHud.h"
+#import "TSNetwork.h"
+#import "UITableView+DEmptyData.h"
+#import "UIColor+Hex.h"
+
+#import <MJRefresh.h>
+#import <MJExtension.h>
+#import <UIImageView+WebCache.h>
+#import <MBProgressHUD.h>
+
+#endif /* PrefixHeader_pch */

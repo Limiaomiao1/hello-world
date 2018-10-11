@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1421" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TSMygoldSummaryCell" rowHeight="182" id="KGk-i7-Jjw" customClass="TSMygoldSummaryCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="182"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="181.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4CU-RD-jtK">
+                        <rect key="frame" x="18" y="10" width="284" height="161.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="发生日期" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jhd-Wz-W0D">
+                                <rect key="frame" x="0.0" y="0.0" width="284" height="40.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="特权金标题" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5He-2u-wNH">
+                                <rect key="frame" x="0.0" y="40.5" width="284" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="收益金额" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wqF-qi-ZUe">
+                                <rect key="frame" x="0.0" y="121" width="284" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="特权金金额" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hcR-06-OYH">
+                                <rect key="frame" x="0.0" y="80.5" width="284" height="40.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jhd-Wz-W0D" firstAttribute="height" secondItem="4CU-RD-jtK" secondAttribute="height" multiplier="0.25" id="0Pg-EP-nbN"/>
+                            <constraint firstItem="5He-2u-wNH" firstAttribute="leading" secondItem="jhd-Wz-W0D" secondAttribute="leading" id="1VN-aT-wmF"/>
+                            <constraint firstItem="wqF-qi-ZUe" firstAttribute="trailing" secondItem="jhd-Wz-W0D" secondAttribute="trailing" id="BYR-fp-6oa"/>
+                            <constraint firstItem="jhd-Wz-W0D" firstAttribute="leading" secondItem="4CU-RD-jtK" secondAttribute="leading" id="CFE-vG-hK2"/>
+                            <constraint firstItem="5He-2u-wNH" firstAttribute="trailing" secondItem="jhd-Wz-W0D" secondAttribute="trailing" id="Muq-Vh-ggm"/>
+                            <constraint firstItem="wqF-qi-ZUe" firstAttribute="height" secondItem="jhd-Wz-W0D" secondAttribute="height" id="P4S-vV-If2"/>
+                            <constraint firstItem="5He-2u-wNH" firstAttribute="top" secondItem="jhd-Wz-W0D" secondAttribute="bottom" id="PyP-39-o2A"/>
+                            <constraint firstItem="hcR-06-OYH" firstAttribute="leading" secondItem="jhd-Wz-W0D" secondAttribute="leading" id="RWL-we-kz4"/>
+                            <constraint firstItem="hcR-06-OYH" firstAttribute="top" secondItem="5He-2u-wNH" secondAttribute="bottom" id="Vfg-49-G4H"/>
+                            <constraint firstItem="hcR-06-OYH" firstAttribute="height" secondItem="jhd-Wz-W0D" secondAttribute="height" id="Wye-Hm-29V"/>
+                            <constraint firstItem="jhd-Wz-W0D" firstAttribute="top" secondItem="4CU-RD-jtK" secondAttribute="top" id="eKu-CH-ddD"/>
+                            <constraint firstAttribute="trailing" secondItem="jhd-Wz-W0D" secondAttribute="trailing" id="jFr-hD-HRf"/>
+                            <constraint firstItem="5He-2u-wNH" firstAttribute="height" secondItem="jhd-Wz-W0D" secondAttribute="height" id="mRB-WF-9UN"/>
+                            <constraint firstItem="hcR-06-OYH" firstAttribute="trailing" secondItem="jhd-Wz-W0D" secondAttribute="trailing" id="qv5-Z9-STe"/>
+                            <constraint firstItem="wqF-qi-ZUe" firstAttribute="leading" secondItem="jhd-Wz-W0D" secondAttribute="leading" id="qvU-1M-kqc"/>
+                            <constraint firstItem="wqF-qi-ZUe" firstAttribute="top" secondItem="hcR-06-OYH" secondAttribute="bottom" id="wpX-wa-CKI"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="4CU-RD-jtK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="0fq-LV-Ont"/>
+                    <constraint firstAttribute="bottom" secondItem="4CU-RD-jtK" secondAttribute="bottom" constant="10" id="WdW-oI-dup"/>
+                    <constraint firstAttribute="trailing" secondItem="4CU-RD-jtK" secondAttribute="trailing" constant="18" id="pbL-zK-GIB"/>
+                    <constraint firstItem="4CU-RD-jtK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="18" id="v6D-03-6o7"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="earningLabel" destination="wqF-qi-ZUe" id="D9f-fe-tvO"/>
+                <outlet property="getTimeLabel" destination="jhd-Wz-W0D" id="kvb-5G-Vvk"/>
+                <outlet property="goldNameLabel" destination="5He-2u-wNH" id="hyf-V7-0bb"/>
+                <outlet property="tqjMoneyLabel" destination="hcR-06-OYH" id="RJ4-DK-Y25"/>
+            </connections>
+            <point key="canvasLocation" x="-63" y="109"/>
+        </tableViewCell>
+    </objects>
+</document>
